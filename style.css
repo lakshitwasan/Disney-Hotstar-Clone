@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #141a28;
+    position: relative;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    color: white;
+    top: 0%;
+    bottom: 0%;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    z-index: 9;
+    background-color: #141a28;
+}
+
+#logo{
+    height: 100%;
+}
+
+#logo img{
+    height: 100%;
+}
+
+#nav-links{
+    margin-top: 3px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 17px ;
+
+}
+
+#kids-icon{
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+#right-container{
+    display: block;
+    margin-left: auto;
+}
+
+#search-box{
+    border: none;
+    border-bottom: 1px solid #a1a3a8;
+    background: transparent;
+    height: 30px;
+    font-size: medium;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    width: 250px;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+::placeholder{
+    color: #fff;
+    opacity: 0.7;
+}
+
+#search-box:focus{
+    width: 400px;
+    border-color: #1f80e0;
+}
+
+#search-icon{
+    background-color: #141a28;
+    border: none;
+    color: #fff;
+    margin-left: -25px ;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+#sub-btn{
+    background-color: #1f80e0;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+    letter-spacing: 1px ;
+}
+
+#login{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+/* INFINITE COROUSEL */
+
+.corousel-container{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding: 20px , 0;
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+
+.corousel{
+    display: flex;
+    width: 92%;
+    height: 90%;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.slider{
+    flex: 0  0  auto;
+    margin-right: 30px;
+    position: relative;
+    background: rgb(0, 0, 0 , 0.5);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.slider-image{
+    width: 70%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.slider-content{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    color: #ffff;
+    z-index: 3;
+    background: linear-gradient(to right , #030b17 80% , #0c111b00);
+}
+
+.movie-title{
+    padding-left: 50px;
+    margin-top: 80px;
+}
+
+.movie-sub-head{
+    padding-left: 50px;
+    margin-top: 20px;
+    opacity: 0.6;
+}
+
+.movie-des{
+    padding-left: 50px;
+    margin-top: 10px;
+    width: 80%;
+    line-height: 30px;
+    opacity: 0.6;
+}
+
+/* VIDEO CARD */
+
+.video-card-container{
+    position: relative;
+    width: 94%;
+    height: 10vw;
+    margin:auto;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    justify-content: space-between;
+}
+
+.video-card{
+    position: relative;
+    min-width: calc(100%/5 - 10px);
+    width: calc(100%/5 - 10px);
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.video-card-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.video-card:hover{
+    transform: scale(1.08);
+}
+
+.video-card:hover .video-card-image{
+    display: none;
+}
+
+/* MOVIE CARD */
+
+.recommended{
+    padding-left: 3%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.movie-list{
+    width: 100%;
+    height: 220px;
+    margin: 10px 0 20px;
+    position: relative;
+}
+
+.card-container{
+    position: relative;
+    width: 92%;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    margin: 0 40px;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: 0.5s;
+    background: black;
+}
+
+.card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-body{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    /* z-index: 2; */
+    background: linear-gradient(to bottom, rgba(4,8,15,0) , #192133 90% );
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.card:hover .card-body{
+    opacity: 1;
+}
+
+.name{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 60%;
+    letter-spacing: 1px;
+}
+
+.card-sub-head{
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.des{
+    color: #fff;
+    opacity: 0.7;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.watchlist-btn{
+    position: relative;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 255, 255 , 0.5);
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px 15px 10px 10px;
+    border-radius: 5px;
+}
+
+
+.watchlist-btn::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 6px ;
+    height: 20px;
+    width: 20px;
+    background-image: url(img/add.png);
+    background-size: cover;
+    transform: scale(0.4);
+}
+
+.watchlist-btn:hover{
+    color: #ffff;
+    background: rgba(255, 255, 255 , 0.2);
+}
+
+.pre-btn,
+.nxt-btn{
+    position:absolute;
+    top: 0%;
+    width: 5%;
+    height: 100%;
+    z-index: 2;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+}
+
+.pre-btn{
+    left: -0.5%;
+    background: transparent;
+}
+.nxt-btn{
+    right: 0%;
+    background: transparent;
+}
+
+.pre-btn img ,
+.nxt-btn img{
+    height: 25px;
+    width: 15px;
+    opacity: 0;
+    transition: 0.3s;   
+}
+
+.movie-list:hover .pre-btn img,
+.movie-list:hover .nxt-btn img{
+    opacity: 1;
+}
