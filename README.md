@@ -19,4 +19,5 @@ App.js: The JavaScript file that provides the functionality and interactivity of
 README.md: Instructions and documentation for the web app.
 
 ## Preview
-https://github.com/lakshitwasan/trial/assets/95538553/3a2bb3db-e8e2-449d-b11a-29f3b6c44428
+https://github.com/lakshitwasan/Disney-Hotstar-Clone/assets/95538553/d8893aa9-0681-4765-a84a-e4e8019320e0
+
