@@ -18,6 +18,3 @@ Style.css: The CSS file that defines the visual styles and layout of the applica
 App.js: The JavaScript file that provides the functionality and interactivity of the application.
 README.md: Instructions and documentation for the web app.
 
-## Preview
-https://github.com/lakshitwasan/Disney-Hotstar-Clone/assets/95538553/d8893aa9-0681-4765-a84a-e4e8019320e0
-
