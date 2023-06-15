@@ -6,7 +6,7 @@ This project is a clone of the Disney+ Hotstar frontend, created using HTML, CSS
 ## Features
 
 - Automoving time carousel displaying different movie descriptions and names.
-- Video cards for Disney, Pixar, marvel , Star Wars and National Geographic .
+- Video cards for Disney, Pixar, Marvel , Star Wars and National Geographic .
 - Hovering over the video cards plays the respective video.
 - Slider of movies to navigate through a collection of movies.
 - Interactive movie cards that enlarge on hover.
